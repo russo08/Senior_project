@@ -1,0 +1,27 @@
+[0.011s] Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+[0.033s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.196s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.203s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.231s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.234s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.337s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.379s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.380s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.503s] -- Found serial: 1.2.1 (/home/dev_pc/dev_ws/install/serial/share/serial/cmake)
+[0.504s] CMake Error at CMakeLists.txt:21 (target_include_directories):
+[0.504s]   Cannot specify include directories for target "racecar_hw_interface" which
+[0.504s]   is not built by this project.
+[0.505s] 
+[0.505s] 
+[0.505s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[0.505s]   ament_target_dependencies() the first argument must be a valid target name
+[0.505s] Call Stack (most recent call first):
+[0.505s]   CMakeLists.txt:26 (ament_target_dependencies)
+[0.505s] 
+[0.505s] 
+[0.506s] -- Configuring incomplete, errors occurred!
+[0.506s] See also "/home/dev_pc/dev_ws/build/racecar_hw_interface/CMakeFiles/CMakeOutput.log".
+[0.506s] See also "/home/dev_pc/dev_ws/build/racecar_hw_interface/CMakeFiles/CMakeError.log".
+[0.510s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.512s] Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '2': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6

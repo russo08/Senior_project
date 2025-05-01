@@ -1,0 +1,40 @@
+[0.016s] Invoking command in '/home/dev_pc/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/dev_pc/dev_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/serial
+[0.028s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.047s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.197s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.204s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[0.208s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.264s] -- Configuring done
+[0.273s] -- Generating done
+[0.279s] -- Build files have been written to: /home/dev_pc/dev_ws/build/serial
+[0.280s] Invoked command in '/home/dev_pc/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/dev_pc/dev_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/serial
+[0.281s] Invoking command in '/home/dev_pc/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/serial -- -j6 -l6
+[0.318s] [35m[1mScanning dependencies of target serial[0m
+[0.328s] [ 14%] Built target gtest_main
+[0.329s] [ 21%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[0.329s] [ 35%] Built target gtest
+[0.329s] [ 42%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[0.331s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[0.370s] In file included from [01m[K/home/dev_pc/dev_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:25[m[K:
+[0.370s] [01m[K/home/dev_pc/dev_ws/src/serial/include/serial/serial.h:46:10:[m[K [01;31m[Kfatal error: [m[Kinclude/serial/v8stdint.h: No such file or directory
+[0.370s]    46 | #include [01;31m[K"include/serial/v8stdint.h"[m[K
+[0.371s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.371s] compilation terminated.
+[0.371s] In file included from [01m[K/home/dev_pc/dev_ws/src/serial/src/serial.cc:12[m[K:
+[0.371s] [01m[K/home/dev_pc/dev_ws/src/serial/include/serial/serial.h:46:10:[m[K [01;31m[Kfatal error: [m[Kinclude/serial/v8stdint.h: No such file or directory
+[0.371s]    46 | #include [01;31m[K"include/serial/v8stdint.h"[m[K
+[0.371s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.371s] compilation terminated.
+[0.372s] make[2]: *** [CMakeFiles/serial.dir/build.make:89: CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o] Error 1
+[0.372s] make[2]: *** Waiting for unfinished jobs....
+[0.372s] make[2]: *** [CMakeFiles/serial.dir/build.make:63: CMakeFiles/serial.dir/src/serial.cc.o] Error 1
+[0.374s] In file included from [01m[K/home/dev_pc/dev_ws/src/serial/include/serial/impl/unix.h:43[m[K,
+[0.374s]                  from [01m[K/home/dev_pc/dev_ws/src/serial/src/impl/unix.cc:35[m[K:
+[0.374s] [01m[K/home/dev_pc/dev_ws/src/serial/include/serial/serial.h:46:10:[m[K [01;31m[Kfatal error: [m[Kinclude/serial/v8stdint.h: No such file or directory
+[0.374s]    46 | #include [01;31m[K"include/serial/v8stdint.h"[m[K
+[0.374s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.374s] compilation terminated.
+[0.375s] make[2]: *** [CMakeFiles/serial.dir/build.make:76: CMakeFiles/serial.dir/src/impl/unix.cc.o] Error 1
+[0.375s] make[1]: *** [CMakeFiles/Makefile2:123: CMakeFiles/serial.dir/all] Error 2
+[0.376s] make: *** [Makefile:141: all] Error 2
+[0.377s] Invoked command in '/home/dev_pc/dev_ws/build/serial' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/serial -- -j6 -l6

@@ -1,0 +1,1016 @@
+[0.000000] (-) TimerEvent: {}
+[0.000615] (asio_cmake_module) JobQueued: {'identifier': 'asio_cmake_module', 'dependencies': OrderedDict()}
+[0.000722] (racecar_hw_interface) JobQueued: {'identifier': 'racecar_hw_interface', 'dependencies': OrderedDict()}
+[0.000788] (racer_bot) JobQueued: {'identifier': 'racer_bot', 'dependencies': OrderedDict()}
+[0.000841] (udp_msgs) JobQueued: {'identifier': 'udp_msgs', 'dependencies': OrderedDict()}
+[0.000905] (io_context) JobQueued: {'identifier': 'io_context', 'dependencies': OrderedDict([('asio_cmake_module', '/home/dev_pc/dev_ws/install/asio_cmake_module'), ('udp_msgs', '/home/dev_pc/dev_ws/install/udp_msgs')])}
+[0.000927] (serial_driver) JobQueued: {'identifier': 'serial_driver', 'dependencies': OrderedDict([('asio_cmake_module', '/home/dev_pc/dev_ws/install/asio_cmake_module'), ('udp_msgs', '/home/dev_pc/dev_ws/install/udp_msgs'), ('io_context', '/home/dev_pc/dev_ws/install/io_context')])}
+[0.000959] (udp_driver) JobQueued: {'identifier': 'udp_driver', 'dependencies': OrderedDict([('asio_cmake_module', '/home/dev_pc/dev_ws/install/asio_cmake_module'), ('udp_msgs', '/home/dev_pc/dev_ws/install/udp_msgs'), ('io_context', '/home/dev_pc/dev_ws/install/io_context')])}
+[0.000979] (asio_cmake_module) JobStarted: {'identifier': 'asio_cmake_module'}
+[0.007521] (udp_msgs) JobStarted: {'identifier': 'udp_msgs'}
+[0.012637] (racecar_hw_interface) JobStarted: {'identifier': 'racecar_hw_interface'}
+[0.018104] (racer_bot) JobStarted: {'identifier': 'racer_bot'}
+[0.023806] (asio_cmake_module) JobProgress: {'identifier': 'asio_cmake_module', 'progress': 'cmake'}
+[0.024323] (asio_cmake_module) JobProgress: {'identifier': 'asio_cmake_module', 'progress': 'build'}
+[0.024894] (asio_cmake_module) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev_pc/dev_ws/build/asio_cmake_module', '--', '-j6', '-l6'], 'cwd': '/home/dev_pc/dev_ws/build/asio_cmake_module', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/asio_cmake_module'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[0.028646] (udp_msgs) JobProgress: {'identifier': 'udp_msgs', 'progress': 'cmake'}
+[0.029207] (udp_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/dev_pc/dev_ws/src/udp_msgs', '-DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/udp_msgs'], 'cwd': '/home/dev_pc/dev_ws/build/udp_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/udp_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[0.032016] (racecar_hw_interface) JobProgress: {'identifier': 'racecar_hw_interface', 'progress': 'cmake'}
+[0.032585] (racecar_hw_interface) JobProgress: {'identifier': 'racecar_hw_interface', 'progress': 'build'}
+[0.033945] (racecar_hw_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev_pc/dev_ws/build/racecar_hw_interface', '--', '-j6', '-l6'], 'cwd': '/home/dev_pc/dev_ws/build/racecar_hw_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/racecar_hw_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[0.037610] (racer_bot) JobProgress: {'identifier': 'racer_bot', 'progress': 'cmake'}
+[0.038052] (racer_bot) JobProgress: {'identifier': 'racer_bot', 'progress': 'build'}
+[0.038412] (racer_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev_pc/dev_ws/build/racer_bot', '--', '-j6', '-l6'], 'cwd': '/home/dev_pc/dev_ws/build/racer_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/racer_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[0.062943] (asio_cmake_module) CommandEnded: {'returncode': 0}
+[0.063523] (asio_cmake_module) JobProgress: {'identifier': 'asio_cmake_module', 'progress': 'install'}
+[0.074513] (asio_cmake_module) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev_pc/dev_ws/build/asio_cmake_module'], 'cwd': '/home/dev_pc/dev_ws/build/asio_cmake_module', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/asio_cmake_module'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[0.076903] (racecar_hw_interface) CommandEnded: {'returncode': 0}
+[0.077528] (racecar_hw_interface) JobProgress: {'identifier': 'racecar_hw_interface', 'progress': 'install'}
+[0.078878] (racecar_hw_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev_pc/dev_ws/build/racecar_hw_interface'], 'cwd': '/home/dev_pc/dev_ws/build/racecar_hw_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/racecar_hw_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[0.080285] (racer_bot) CommandEnded: {'returncode': 0}
+[0.081206] (racer_bot) JobProgress: {'identifier': 'racer_bot', 'progress': 'install'}
+[0.082260] (racer_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev_pc/dev_ws/build/racer_bot'], 'cwd': '/home/dev_pc/dev_ws/build/racer_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/racer_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[0.083433] (asio_cmake_module) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.084464] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/ament_index/resource_index/package_run_dependencies/asio_cmake_module\n'}
+[0.084540] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/ament_index/resource_index/parent_prefix_path/asio_cmake_module\n'}
+[0.085022] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.sh\n'}
+[0.085681] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.dsv\n'}
+[0.085863] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.sh\n'}
+[0.085997] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.dsv\n'}
+[0.086232] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.bash\n'}
+[0.086366] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.sh\n'}
+[0.086591] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.zsh\n'}
+[0.086773] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.dsv\n'}
+[0.086908] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/package.dsv\n'}
+[0.087045] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/ament_index/resource_index/packages/asio_cmake_module\n'}
+[0.087166] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_module-extras.cmake\n'}
+[0.087388] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig.cmake\n'}
+[0.087563] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig-version.cmake\n'}
+[0.087660] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/package.xml\n'}
+[0.087892] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake\n'}
+[0.088058] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules\n'}
+[0.088187] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake\n'}
+[0.088316] (udp_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.088566] (asio_cmake_module) CommandEnded: {'returncode': 0}
+[0.088877] (racecar_hw_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.089096] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/package_run_dependencies/racecar_hw_interface\n'}
+[0.089227] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/parent_prefix_path/racecar_hw_interface\n'}
+[0.089419] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.sh\n'}
+[0.089541] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.dsv\n'}
+[0.090138] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.sh\n'}
+[0.090320] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.dsv\n'}
+[0.090437] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.bash\n'}
+[0.090555] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.sh\n'}
+[0.090829] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.zsh\n'}
+[0.090904] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.dsv\n'}
+[0.091111] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.dsv\n'}
+[0.091217] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/packages/racecar_hw_interface\n'}
+[0.091303] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig.cmake\n'}
+[0.091391] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig-version.cmake\n'}
+[0.091477] (racecar_hw_interface) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.xml\n'}
+[0.091554] (racer_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.091652] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/config\n'}
+[0.091742] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/config/empty.yaml\n'}
+[0.091821] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description\n'}
+[0.091955] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/inertial_macros.xacro\n'}
+[0.092043] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/robot.urdf.xacro\n'}
+[0.092139] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/robot_core.xacro\n'}
+[0.092229] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/gazebo_control.xacro\n'}
+[0.092318] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/launch\n'}
+[0.092441] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/launch/rsp.launch.py\n'}
+[0.093295] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/launch/launch_sim.launch.py\n'}
+[0.093773] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/worlds\n'}
+[0.093878] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/worlds/empty.world\n'}
+[0.094401] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/ament_index/resource_index/package_run_dependencies/racer_bot\n'}
+[0.094524] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/ament_index/resource_index/parent_prefix_path/racer_bot\n'}
+[0.096186] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/ament_prefix_path.sh\n'}
+[0.096437] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/ament_prefix_path.dsv\n'}
+[0.096750] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/path.sh\n'}
+[0.096845] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/path.dsv\n'}
+[0.096942] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.bash\n'}
+[0.097114] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.sh\n'}
+[0.097738] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.zsh\n'}
+[0.097843] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.dsv\n'}
+[0.097935] (racer_bot) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/package.dsv\n'}
+[0.098111] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/ament_index/resource_index/packages/racer_bot\n'}
+[0.098202] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/cmake/racer_botConfig.cmake\n'}
+[0.098667] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/cmake/racer_botConfig-version.cmake\n'}
+[0.099354] (racer_bot) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/package.xml\n'}
+[0.099776] (-) TimerEvent: {}
+[0.104762] (asio_cmake_module) JobEnded: {'identifier': 'asio_cmake_module', 'rc': 0}
+[0.105770] (racer_bot) CommandEnded: {'returncode': 0}
+[0.115973] (racer_bot) JobEnded: {'identifier': 'racer_bot', 'rc': 0}
+[0.116454] (racecar_hw_interface) CommandEnded: {'returncode': 0}
+[0.125273] (racecar_hw_interface) JobEnded: {'identifier': 'racecar_hw_interface', 'rc': 0}
+[0.130572] (udp_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.134563] (udp_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.192885] (udp_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.193604] (udp_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199881] (-) TimerEvent: {}
+[0.251694] (udp_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.261263] (udp_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.261555] (udp_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.263544] (udp_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.300010] (-) TimerEvent: {}
+[0.333698] (udp_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.334641] (udp_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400129] (-) TimerEvent: {}
+[0.406366] (udp_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.416841] (udp_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.417270] (udp_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.420391] (udp_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.440038] (udp_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.440262] (udp_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.500205] (-) TimerEvent: {}
+[0.600442] (-) TimerEvent: {}
+[0.603684] (udp_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[0.627771] (udp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.633419] (udp_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.700306] (udp_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.700440] (-) TimerEvent: {}
+[0.724496] (udp_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.790715] (udp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800540] (-) TimerEvent: {}
+[0.831127] (udp_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.858570] (udp_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.900653] (-) TimerEvent: {}
+[0.996182] (udp_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.000746] (-) TimerEvent: {}
+[1.100953] (-) TimerEvent: {}
+[1.146668] (udp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200592] (udp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201036] (-) TimerEvent: {}
+[1.220797] (udp_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.222038] (udp_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.250639] (udp_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.250826] (udp_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.250892] (udp_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.250949] (udp_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.268075] (udp_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.301145] (-) TimerEvent: {}
+[1.321671] (udp_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.339447] (udp_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.345708] (udp_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.349112] (udp_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.353706] (udp_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.397584] (udp_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.401240] (-) TimerEvent: {}
+[1.410512] (udp_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/dev_pc/dev_ws/build/udp_msgs\n'}
+[1.417228] (udp_msgs) CommandEnded: {'returncode': 0}
+[1.417840] (udp_msgs) JobProgress: {'identifier': 'udp_msgs', 'progress': 'build'}
+[1.419266] (udp_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev_pc/dev_ws/build/udp_msgs', '--', '-j6', '-l6'], 'cwd': '/home/dev_pc/dev_ws/build/udp_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/udp_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[1.455309] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__cpp\x1b[0m\n'}
+[1.455455] (udp_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.464842] (udp_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.501365] (-) TimerEvent: {}
+[1.601616] (-) TimerEvent: {}
+[1.701833] (-) TimerEvent: {}
+[1.768729] (udp_msgs) StdoutLine: {'line': b'[  4%] Built target udp_msgs__cpp\n'}
+[1.778380] (udp_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.782403] (udp_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.782546] (udp_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.788731] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.801742] (udp_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_generator_c.dir/rosidl_generator_c/udp_msgs/srv/detail/udp_socket__functions.c.o\x1b[0m\n'}
+[1.801883] (-) TimerEvent: {}
+[1.802020] (udp_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_generator_c.dir/rosidl_generator_c/udp_msgs/msg/detail/udp_packet__functions.c.o\x1b[0m\n'}
+[1.802156] (udp_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_generator_c.dir/rosidl_generator_c/udp_msgs/srv/detail/udp_send__functions.c.o\x1b[0m\n'}
+[1.854841] (udp_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libudp_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.889182] (udp_msgs) StdoutLine: {'line': b'[ 19%] Built target udp_msgs__rosidl_generator_c\n'}
+[1.898846] (udp_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.899090] (udp_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.901987] (-) TimerEvent: {}
+[2.002255] (-) TimerEvent: {}
+[2.010541] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.023623] (udp_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/udp_msgs/msg/udp_packet__type_support.cpp.o\x1b[0m\n'}
+[2.023794] (udp_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/udp_msgs/srv/udp_send__type_support.cpp.o\x1b[0m\n'}
+[2.068140] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.080812] (udp_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/udp_msgs/msg/detail/udp_packet__type_support.cpp.o\x1b[0m\n'}
+[2.097009] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.102355] (-) TimerEvent: {}
+[2.114751] (udp_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/udp_msgs/msg/detail/dds_fastrtps/udp_packet__type_support.cpp.o\x1b[0m\n'}
+[2.130742] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.143982] (udp_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/udp_msgs/msg/udp_packet__type_support.cpp.o\x1b[0m\n'}
+[2.177881] (udp_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/udp_msgs/srv/udp_send__type_support.cpp.o\x1b[0m\n'}
+[2.197926] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.202448] (-) TimerEvent: {}
+[2.208237] (udp_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/udp_msgs/srv/udp_socket__type_support.cpp.o\x1b[0m\n'}
+[2.211835] (udp_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/udp_msgs/msg/detail/udp_packet__type_support.c.o\x1b[0m\n'}
+[2.238078] (udp_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libudp_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.244384] (udp_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/udp_msgs/srv/detail/udp_send__type_support.c.o\x1b[0m\n'}
+[2.266180] (udp_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/udp_msgs/srv/detail/dds_fastrtps/udp_send__type_support.cpp.o\x1b[0m\n'}
+[2.277570] (udp_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/udp_msgs/srv/detail/udp_socket__type_support.c.o\x1b[0m\n'}
+[2.277778] (udp_msgs) StdoutLine: {'line': b'[ 48%] Built target udp_msgs__rosidl_typesupport_c\n'}
+[2.287189] (udp_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/udp_msgs/srv/detail/dds_fastrtps/udp_socket__type_support.cpp.o\x1b[0m\n'}
+[2.302549] (-) TimerEvent: {}
+[2.308383] (udp_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/udp_msgs/srv/udp_socket__type_support.cpp.o\x1b[0m\n'}
+[2.313753] (udp_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library libudp_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.344978] (udp_msgs) StdoutLine: {'line': b'[ 55%] Built target udp_msgs__rosidl_typesupport_introspection_c\n'}
+[2.353781] (udp_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/udp_msgs/srv/detail/udp_send__type_support.cpp.o\x1b[0m\n'}
+[2.366487] (udp_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/udp_msgs/srv/detail/udp_socket__type_support.cpp.o\x1b[0m\n'}
+[2.402651] (-) TimerEvent: {}
+[2.502908] (-) TimerEvent: {}
+[2.591781] (udp_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libudp_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.603001] (-) TimerEvent: {}
+[2.631749] (udp_msgs) StdoutLine: {'line': b'[ 61%] Built target udp_msgs__rosidl_typesupport_cpp\n'}
+[2.633288] (udp_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libudp_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.668746] (udp_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libudp_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.700228] (udp_msgs) StdoutLine: {'line': b'[ 65%] Built target udp_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.703095] (-) TimerEvent: {}
+[2.746360] (udp_msgs) StdoutLine: {'line': b'[ 65%] Built target udp_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.755622] (udp_msgs) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.803207] (-) TimerEvent: {}
+[2.903430] (-) TimerEvent: {}
+[3.003659] (-) TimerEvent: {}
+[3.016000] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.034206] (udp_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/udp_msgs/msg/detail/udp_packet__type_support_c.cpp.o\x1b[0m\n'}
+[3.034356] (udp_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/udp_msgs/srv/detail/udp_send__type_support_c.cpp.o\x1b[0m\n'}
+[3.034423] (udp_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/udp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/udp_msgs/srv/detail/udp_socket__type_support_c.cpp.o\x1b[0m\n'}
+[3.103779] (-) TimerEvent: {}
+[3.204052] (-) TimerEvent: {}
+[3.304293] (-) TimerEvent: {}
+[3.336385] (udp_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libudp_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.404410] (-) TimerEvent: {}
+[3.409483] (udp_msgs) StdoutLine: {'line': b'[ 76%] Built target udp_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.418096] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs\x1b[0m\n'}
+[3.427443] (udp_msgs) StdoutLine: {'line': b'[ 76%] Built target udp_msgs\n'}
+[3.436304] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__py\x1b[0m\n'}
+[3.445862] (udp_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.504525] (-) TimerEvent: {}
+[3.604746] (-) TimerEvent: {}
+[3.704971] (-) TimerEvent: {}
+[3.805189] (-) TimerEvent: {}
+[3.905401] (-) TimerEvent: {}
+[4.005630] (-) TimerEvent: {}
+[4.008714] (udp_msgs) StdoutLine: {'line': b'[ 78%] Built target udp_msgs__py\n'}
+[4.017535] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__python\x1b[0m\n'}
+[4.047339] (udp_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__python.dir/rosidl_generator_py/udp_msgs/srv/_udp_socket_s.c.o\x1b[0m\n'}
+[4.047488] (udp_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__python.dir/rosidl_generator_py/udp_msgs/msg/_udp_packet_s.c.o\x1b[0m\n'}
+[4.047552] (udp_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__python.dir/rosidl_generator_py/udp_msgs/srv/_udp_send_s.c.o\x1b[0m\n'}
+[4.105750] (-) TimerEvent: {}
+[4.133468] (udp_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/udp_msgs/libudp_msgs__python.so\x1b[0m\n'}
+[4.172295] (udp_msgs) StdoutLine: {'line': b'[ 87%] Built target udp_msgs__python\n'}
+[4.181246] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.181386] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.181447] (udp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.197205] (udp_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/udp_msgs/_udp_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.197353] (udp_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/udp_msgs/_udp_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.197802] (udp_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/udp_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/udp_msgs/_udp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.205867] (-) TimerEvent: {}
+[4.275717] (udp_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/udp_msgs/udp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.275865] (udp_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/udp_msgs/udp_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.275930] (udp_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/udp_msgs/udp_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.305987] (-) TimerEvent: {}
+[4.310672] (udp_msgs) StdoutLine: {'line': b'[100%] Built target udp_msgs__rosidl_typesupport_c__pyext\n'}
+[4.311185] (udp_msgs) StdoutLine: {'line': b'[100%] Built target udp_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.336676] (udp_msgs) StdoutLine: {'line': b'[100%] Built target udp_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.347141] (udp_msgs) CommandEnded: {'returncode': 0}
+[4.347637] (udp_msgs) JobProgress: {'identifier': 'udp_msgs', 'progress': 'install'}
+[4.349015] (udp_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev_pc/dev_ws/build/udp_msgs'], 'cwd': '/home/dev_pc/dev_ws/build/udp_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/udp_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[4.356968] (udp_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.357189] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/ament_index/resource_index/rosidl_interfaces/udp_msgs\n'}
+[4.357347] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs\n'}
+[4.357508] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg\n'}
+[4.357669] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail\n'}
+[4.357759] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__struct.h\n'}
+[4.357833] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__functions.h\n'}
+[4.357904] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__type_support.h\n'}
+[4.357972] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__functions.c\n'}
+[4.358041] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.358110] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/udp_packet.h\n'}
+[4.358178] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv\n'}
+[4.358245] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/udp_send.h\n'}
+[4.358300] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/udp_socket.h\n'}
+[4.358367] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail\n'}
+[4.358433] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__type_support.h\n'}
+[4.358498] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__type_support.h\n'}
+[4.358551] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__struct.h\n'}
+[4.358616] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__struct.h\n'}
+[4.358694] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__functions.c\n'}
+[4.358750] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__functions.c\n'}
+[4.358803] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__functions.h\n'}
+[4.358877] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__functions.h\n'}
+[4.359009] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/library_path.sh\n'}
+[4.359129] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/library_path.dsv\n'}
+[4.359265] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_generator_c.so\n'}
+[4.359638] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_generator_c.so" to ""\n'}
+[4.359740] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs\n'}
+[4.359822] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg\n'}
+[4.359895] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.359949] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail\n'}
+[4.360054] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[4.360130] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv\n'}
+[4.360183] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail\n'}
+[4.360250] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__rosidl_typesupport_fastrtps_c.h\n'}
+[4.360304] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__rosidl_typesupport_fastrtps_c.h\n'}
+[4.360356] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.360629] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.360700] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs\n'}
+[4.360779] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg\n'}
+[4.360845] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.360911] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail\n'}
+[4.360977] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/dds_fastrtps\n'}
+[4.361048] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.361114] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv\n'}
+[4.361179] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail\n'}
+[4.361245] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.361297] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/dds_fastrtps\n'}
+[4.361349] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.361415] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.361777] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.361898] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs\n'}
+[4.361972] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg\n'}
+[4.362029] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail\n'}
+[4.362107] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__rosidl_typesupport_introspection_c.h\n'}
+[4.362160] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__type_support.c\n'}
+[4.362246] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.362305] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv\n'}
+[4.362371] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail\n'}
+[4.362437] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__type_support.c\n'}
+[4.362490] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__rosidl_typesupport_introspection_c.h\n'}
+[4.362561] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__type_support.c\n'}
+[4.362613] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__rosidl_typesupport_introspection_c.h\n'}
+[4.362684] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.363058] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.363223] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_c.so\n'}
+[4.363528] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.363668] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs\n'}
+[4.363784] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg\n'}
+[4.363849] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.363929] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail\n'}
+[4.364009] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__traits.hpp\n'}
+[4.364088] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__struct.hpp\n'}
+[4.364171] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__type_support.hpp\n'}
+[4.364241] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__builder.hpp\n'}
+[4.364297] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/udp_packet.hpp\n'}
+[4.364363] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv\n'}
+[4.364427] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail\n'}
+[4.364482] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__traits.hpp\n'}
+[4.364546] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__builder.hpp\n'}
+[4.364612] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__struct.hpp\n'}
+[4.364665] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__struct.hpp\n'}
+[4.364731] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__traits.hpp\n'}
+[4.364796] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__builder.hpp\n'}
+[4.364867] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__type_support.hpp\n'}
+[4.364932] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__type_support.hpp\n'}
+[4.364986] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/udp_socket.hpp\n'}
+[4.365050] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/udp_send.hpp\n'}
+[4.365137] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs\n'}
+[4.365190] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg\n'}
+[4.365253] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail\n'}
+[4.365328] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__type_support.cpp\n'}
+[4.365394] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/msg/detail/udp_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.365459] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv\n'}
+[4.365514] (udp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail\n'}
+[4.365579] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__type_support.cpp\n'}
+[4.365643] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__type_support.cpp\n'}
+[4.365697] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_socket__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.365750] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/include/udp_msgs/srv/detail/udp_send__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.365850] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.366236] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.366323] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_cpp.so\n'}
+[4.366637] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.366750] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/pythonpath.sh\n'}
+[4.366898] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/pythonpath.dsv\n'}
+[4.367068] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/__init__.py\n'}
+[4.391659] (udp_msgs) StdoutLine: {'line': b"Compiling '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/__init__.py'...\n"}
+[4.394676] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/msg\n'}
+[4.394788] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/msg/__init__.py\n'}
+[4.395005] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/msg/_udp_packet_s.c\n'}
+[4.395159] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/msg/_udp_packet.py\n'}
+[4.395311] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/srv\n'}
+[4.395433] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/srv/_udp_send.py\n'}
+[4.395521] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/srv/__init__.py\n'}
+[4.395599] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/srv/_udp_socket.py\n'}
+[4.395657] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/srv/_udp_socket_s.c\n'}
+[4.395711] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/srv/_udp_send_s.c\n'}
+[4.395862] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/udp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.396326] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/udp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.396496] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/udp_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.396947] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/udp_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.397113] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/udp_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.397542] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages/udp_msgs/udp_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.397678] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__python.so\n'}
+[4.397977] (udp_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_msgs/lib/libudp_msgs__python.so" to ""\n'}
+[4.398144] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/msg/UdpPacket.idl\n'}
+[4.398228] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSend.idl\n'}
+[4.398304] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSocket.idl\n'}
+[4.398384] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/msg/UdpPacket.msg\n'}
+[4.398522] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSend.srv\n'}
+[4.398611] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSend_Request.msg\n'}
+[4.398773] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSend_Response.msg\n'}
+[4.398890] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSocket.srv\n'}
+[4.399006] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSocket_Request.msg\n'}
+[4.399105] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/srv/UdpSocket_Response.msg\n'}
+[4.399236] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/ament_index/resource_index/package_run_dependencies/udp_msgs\n'}
+[4.399424] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/ament_index/resource_index/parent_prefix_path/udp_msgs\n'}
+[4.399546] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/ament_prefix_path.sh\n'}
+[4.399681] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/ament_prefix_path.dsv\n'}
+[4.399805] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/path.sh\n'}
+[4.399904] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/environment/path.dsv\n'}
+[4.400007] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/local_setup.bash\n'}
+[4.400093] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/local_setup.sh\n'}
+[4.400205] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/local_setup.zsh\n'}
+[4.400316] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/local_setup.dsv\n'}
+[4.400428] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/package.dsv\n'}
+[4.400576] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/ament_index/resource_index/packages/udp_msgs\n'}
+[4.400749] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_generator_cExport.cmake\n'}
+[4.400875] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.401033] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.401161] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.401312] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.401438] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.401589] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.401757] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.401930] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.402062] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.402220] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.402310] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.402426] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.402542] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.402664] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.402827] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.402920] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.403032] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.403111] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgsConfig.cmake\n'}
+[4.403229] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/cmake/udp_msgsConfig-version.cmake\n'}
+[4.403366] (udp_msgs) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_msgs/share/udp_msgs/package.xml\n'}
+[4.405187] (udp_msgs) CommandEnded: {'returncode': 0}
+[4.406067] (-) TimerEvent: {}
+[4.421715] (udp_msgs) JobEnded: {'identifier': 'udp_msgs', 'rc': 0}
+[4.422092] (io_context) JobStarted: {'identifier': 'io_context'}
+[4.429880] (io_context) JobProgress: {'identifier': 'io_context', 'progress': 'cmake'}
+[4.430670] (io_context) Command: {'cmd': ['/usr/bin/cmake', '/home/dev_pc/dev_ws/src/transport_drivers/io_context', '-DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/io_context'], 'cwd': '/home/dev_pc/dev_ws/build/io_context', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/io_context'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[4.444332] (io_context) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[4.462349] (io_context) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.506187] (-) TimerEvent: {}
+[4.606453] (-) TimerEvent: {}
+[4.695638] (io_context) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.698451] (io_context) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[4.706542] (-) TimerEvent: {}
+[4.800590] (io_context) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.806641] (-) TimerEvent: {}
+[4.843443] (io_context) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[4.844876] (io_context) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.906746] (-) TimerEvent: {}
+[5.000988] (io_context) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.006816] (-) TimerEvent: {}
+[5.007006] (io_context) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[5.014322] (io_context) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.015725] (io_context) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.015949] (io_context) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dev_pc/dev_ws/src/transport_drivers/io_context/include\n'}
+[5.016031] (io_context) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.017168] (io_context) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.017256] (io_context) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.017985] (io_context) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.019335] (io_context) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.019420] (io_context) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.019885] (io_context) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.024336] (io_context) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.036395] (io_context) StdoutLine: {'line': b'-- Generating done\n'}
+[5.041851] (io_context) StdoutLine: {'line': b'-- Build files have been written to: /home/dev_pc/dev_ws/build/io_context\n'}
+[5.048494] (io_context) CommandEnded: {'returncode': 0}
+[5.049254] (io_context) JobProgress: {'identifier': 'io_context', 'progress': 'build'}
+[5.049284] (io_context) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev_pc/dev_ws/build/io_context', '--', '-j6', '-l6'], 'cwd': '/home/dev_pc/dev_ws/build/io_context', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/io_context'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[5.083926] (io_context) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[5.084071] (io_context) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[5.084133] (io_context) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target io_context\x1b[0m\n'}
+[5.096573] (io_context) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.098464] (io_context) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[5.102578] (io_context) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/io_context.dir/src/io_context.cpp.o\x1b[0m\n'}
+[5.103389] (io_context) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/io_context.dir/src/msg_converters/std_msgs.cpp.o\x1b[0m\n'}
+[5.106915] (-) TimerEvent: {}
+[5.207178] (-) TimerEvent: {}
+[5.307429] (-) TimerEvent: {}
+[5.407690] (-) TimerEvent: {}
+[5.507955] (-) TimerEvent: {}
+[5.608225] (-) TimerEvent: {}
+[5.708488] (-) TimerEvent: {}
+[5.808759] (-) TimerEvent: {}
+[5.909024] (-) TimerEvent: {}
+[6.005242] (io_context) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[6.009142] (-) TimerEvent: {}
+[6.035804] (io_context) StdoutLine: {'line': b'[ 55%] Built target gtest_main\n'}
+[6.109270] (-) TimerEvent: {}
+[6.209529] (-) TimerEvent: {}
+[6.309791] (-) TimerEvent: {}
+[6.338546] (io_context) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libio_context.so\x1b[0m\n'}
+[6.409910] (-) TimerEvent: {}
+[6.438476] (io_context) StdoutLine: {'line': b'[ 66%] Built target io_context\n'}
+[6.510029] (-) TimerEvent: {}
+[6.610283] (-) TimerEvent: {}
+[6.710540] (-) TimerEvent: {}
+[6.810786] (-) TimerEvent: {}
+[6.911023] (-) TimerEvent: {}
+[7.011267] (-) TimerEvent: {}
+[7.111514] (-) TimerEvent: {}
+[7.211759] (-) TimerEvent: {}
+[7.312003] (-) TimerEvent: {}
+[7.412244] (-) TimerEvent: {}
+[7.512489] (-) TimerEvent: {}
+[7.612741] (-) TimerEvent: {}
+[7.712979] (-) TimerEvent: {}
+[7.813221] (-) TimerEvent: {}
+[7.906491] (io_context) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[7.913322] (-) TimerEvent: {}
+[7.955323] (io_context) StdoutLine: {'line': b'[ 77%] Built target gtest\n'}
+[7.964229] (io_context) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_io_context\x1b[0m\n'}
+[7.977067] (io_context) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/test_io_context.dir/test/test_io_context.cpp.o\x1b[0m\n'}
+[8.013441] (-) TimerEvent: {}
+[8.113689] (-) TimerEvent: {}
+[8.213941] (-) TimerEvent: {}
+[8.314197] (-) TimerEvent: {}
+[8.414450] (-) TimerEvent: {}
+[8.514707] (-) TimerEvent: {}
+[8.614961] (-) TimerEvent: {}
+[8.715210] (-) TimerEvent: {}
+[8.815465] (-) TimerEvent: {}
+[8.915717] (-) TimerEvent: {}
+[9.015970] (-) TimerEvent: {}
+[9.116221] (-) TimerEvent: {}
+[9.216516] (-) TimerEvent: {}
+[9.316807] (-) TimerEvent: {}
+[9.417065] (-) TimerEvent: {}
+[9.517351] (-) TimerEvent: {}
+[9.617601] (-) TimerEvent: {}
+[9.643717] (io_context) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_io_context\x1b[0m\n'}
+[9.717732] (-) TimerEvent: {}
+[9.791856] (io_context) StdoutLine: {'line': b'[100%] Built target test_io_context\n'}
+[9.801603] (io_context) CommandEnded: {'returncode': 0}
+[9.802320] (io_context) JobProgress: {'identifier': 'io_context', 'progress': 'install'}
+[9.802690] (io_context) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev_pc/dev_ws/build/io_context'], 'cwd': '/home/dev_pc/dev_ws/build/io_context', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/io_context'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[9.811490] (io_context) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.811901] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include\n'}
+[9.811990] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include/io_context\n'}
+[9.812130] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include/io_context/common.hpp\n'}
+[9.812197] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include/io_context/io_context.hpp\n'}
+[9.812280] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters\n'}
+[9.812355] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters/converters.hpp\n'}
+[9.812412] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters/std_msgs.hpp\n'}
+[9.812464] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters/udp_msgs.hpp\n'}
+[9.812518] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/library_path.sh\n'}
+[9.812573] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/library_path.dsv\n'}
+[9.812703] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/lib/libio_context.so\n'}
+[9.813124] (io_context) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/io_context/lib/libio_context.so" to ""\n'}
+[9.813285] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/ament_index/resource_index/package_run_dependencies/io_context\n'}
+[9.813411] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/ament_index/resource_index/parent_prefix_path/io_context\n'}
+[9.813504] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/ament_prefix_path.sh\n'}
+[9.813614] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/ament_prefix_path.dsv\n'}
+[9.813730] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/path.sh\n'}
+[9.813854] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/path.dsv\n'}
+[9.813960] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.bash\n'}
+[9.814034] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.sh\n'}
+[9.814177] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.zsh\n'}
+[9.814270] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.dsv\n'}
+[9.814352] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/package.dsv\n'}
+[9.814503] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/ament_index/resource_index/packages/io_context\n'}
+[9.814639] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.814823] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.815034] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.815215] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/io_contextConfig.cmake\n'}
+[9.815346] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/io_contextConfig-version.cmake\n'}
+[9.815423] (io_context) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/package.xml\n'}
+[9.817243] (io_context) CommandEnded: {'returncode': 0}
+[9.817837] (-) TimerEvent: {}
+[9.829905] (io_context) JobEnded: {'identifier': 'io_context', 'rc': 0}
+[9.830309] (serial_driver) JobStarted: {'identifier': 'serial_driver'}
+[9.834523] (udp_driver) JobStarted: {'identifier': 'udp_driver'}
+[9.840765] (serial_driver) JobProgress: {'identifier': 'serial_driver', 'progress': 'cmake'}
+[9.842233] (serial_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/dev_pc/dev_ws/src/transport_drivers/serial_driver', '-DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/serial_driver'], 'cwd': '/home/dev_pc/dev_ws/build/serial_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/serial_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[9.845102] (udp_driver) JobProgress: {'identifier': 'udp_driver', 'progress': 'cmake'}
+[9.846819] (udp_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/dev_pc/dev_ws/src/transport_drivers/udp_driver', '-DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/udp_driver'], 'cwd': '/home/dev_pc/dev_ws/build/udp_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/udp_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[9.891578] (serial_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[9.894672] (udp_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[9.917969] (-) TimerEvent: {}
+[9.939276] (serial_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[9.941545] (udp_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[9.943427] (serial_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[9.945664] (udp_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[10.002851] (serial_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[10.003045] (udp_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[10.003545] (serial_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[10.003752] (udp_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[10.018052] (-) TimerEvent: {}
+[10.063101] (udp_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.063240] (serial_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.072791] (serial_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.072949] (udp_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.073096] (serial_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.073247] (udp_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.075140] (udp_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[10.075323] (serial_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[10.118172] (-) TimerEvent: {}
+[10.143641] (udp_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[10.143781] (serial_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[10.144527] (udp_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[10.144686] (serial_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[10.213621] (serial_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[10.213897] (udp_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[10.218262] (-) TimerEvent: {}
+[10.223643] (udp_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[10.223828] (serial_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[10.224109] (udp_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[10.224291] (serial_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[10.225956] (udp_driver) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[10.226050] (serial_driver) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[10.248400] (serial_driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[10.248546] (serial_driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.248607] (udp_driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[10.248667] (udp_driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.318377] (-) TimerEvent: {}
+[10.418619] (-) TimerEvent: {}
+[10.517210] (udp_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.518543] (serial_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.518633] (-) TimerEvent: {}
+[10.523621] (udp_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[10.525029] (serial_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[10.594660] (udp_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[10.595902] (serial_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[10.618780] (-) TimerEvent: {}
+[10.620278] (udp_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[10.621151] (serial_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[10.689791] (serial_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.689997] (udp_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.718846] (-) TimerEvent: {}
+[10.740653] (udp_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[10.740853] (serial_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[10.742165] (udp_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.742318] (serial_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.742965] (serial_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[10.743049] (udp_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[10.806201] (serial_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.806500] (serial_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.806602] (udp_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.806664] (udp_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.818937] (-) TimerEvent: {}
+[10.871057] (serial_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[10.871384] (udp_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[10.871558] (udp_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[10.871693] (serial_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[10.919051] (-) TimerEvent: {}
+[10.922514] (serial_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[10.922810] (udp_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[10.922884] (serial_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[10.922942] (udp_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[10.984038] (serial_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[10.984178] (udp_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[10.985003] (serial_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.985086] (udp_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.019155] (-) TimerEvent: {}
+[11.119381] (-) TimerEvent: {}
+[11.219618] (-) TimerEvent: {}
+[11.248955] (udp_driver) StdoutLine: {'line': b'-- Found ASIO: /usr/include  \n'}
+[11.252187] (serial_driver) StdoutLine: {'line': b'-- Found ASIO: /usr/include  \n'}
+[11.283849] (serial_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[11.297087] (udp_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[11.302852] (serial_driver) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[11.304705] (serial_driver) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[11.316241] (udp_driver) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[11.318244] (udp_driver) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[11.319710] (-) TimerEvent: {}
+[11.369598] (serial_driver) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[11.379213] (serial_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[11.380715] (serial_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[11.381126] (serial_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dev_pc/dev_ws/src/transport_drivers/serial_driver/include\n'}
+[11.381210] (serial_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[11.382444] (serial_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[11.382526] (serial_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[11.382848] (udp_driver) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[11.383174] (serial_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[11.383850] (serial_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.384400] (serial_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[11.385646] (serial_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[11.385728] (serial_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[11.386222] (serial_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[11.391238] (serial_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.399849] (udp_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[11.401443] (udp_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[11.402091] (udp_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dev_pc/dev_ws/src/transport_drivers/udp_driver/include\n'}
+[11.402173] (udp_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[11.403537] (udp_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[11.403621] (udp_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[11.404447] (udp_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.406022] (udp_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[11.406103] (udp_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[11.406568] (udp_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[11.411553] (udp_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.419813] (-) TimerEvent: {}
+[11.449373] (serial_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[11.466419] (serial_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/dev_pc/dev_ws/build/serial_driver\n'}
+[11.474218] (serial_driver) CommandEnded: {'returncode': 0}
+[11.474823] (serial_driver) JobProgress: {'identifier': 'serial_driver', 'progress': 'build'}
+[11.476250] (serial_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev_pc/dev_ws/build/serial_driver', '--', '-j6', '-l6'], 'cwd': '/home/dev_pc/dev_ws/build/serial_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/serial_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[11.508970] (udp_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[11.513704] (serial_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[11.513855] (serial_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[11.513918] (serial_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial_bridge\x1b[0m\n'}
+[11.513975] (serial_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial_driver\x1b[0m\n'}
+[11.520039] (-) TimerEvent: {}
+[11.527242] (serial_driver) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[11.528909] (serial_driver) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[11.529214] (serial_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/serial_driver.dir/src/serial_port.cpp.o\x1b[0m\n'}
+[11.542130] (serial_driver) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/serial_driver.dir/src/serial_driver.cpp.o\x1b[0m\n'}
+[11.546087] (udp_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/dev_pc/dev_ws/build/udp_driver\n'}
+[11.559246] (udp_driver) CommandEnded: {'returncode': 0}
+[11.564987] (serial_driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/serial_bridge.dir/rclcpp_components/node_main_serial_bridge.cpp.o\x1b[0m\n'}
+[11.568717] (udp_driver) JobProgress: {'identifier': 'udp_driver', 'progress': 'build'}
+[11.568756] (udp_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev_pc/dev_ws/build/udp_driver', '--', '-j6', '-l6'], 'cwd': '/home/dev_pc/dev_ws/build/udp_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/udp_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[11.618614] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[11.620112] (-) TimerEvent: {}
+[11.630224] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_driver\x1b[0m\n'}
+[11.634790] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_sender_node_exe\x1b[0m\n'}
+[11.646370] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[11.658192] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_receiver_node_exe\x1b[0m\n'}
+[11.664762] (udp_driver) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[11.674725] (udp_driver) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/udp_driver.dir/src/udp_socket.cpp.o\x1b[0m\n'}
+[11.682517] (udp_driver) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[11.696658] (udp_driver) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/udp_sender_node_exe.dir/rclcpp_components/node_main_udp_sender_node_exe.cpp.o\x1b[0m\n'}
+[11.710411] (udp_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/udp_driver.dir/src/udp_driver.cpp.o\x1b[0m\n'}
+[11.720210] (-) TimerEvent: {}
+[11.746473] (udp_driver) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/udp_receiver_node_exe.dir/rclcpp_components/node_main_udp_receiver_node_exe.cpp.o\x1b[0m\n'}
+[11.820305] (-) TimerEvent: {}
+[11.920631] (-) TimerEvent: {}
+[12.020952] (-) TimerEvent: {}
+[12.121293] (-) TimerEvent: {}
+[12.221641] (-) TimerEvent: {}
+[12.321988] (-) TimerEvent: {}
+[12.422317] (-) TimerEvent: {}
+[12.522662] (-) TimerEvent: {}
+[12.623026] (-) TimerEvent: {}
+[12.723398] (-) TimerEvent: {}
+[12.823739] (-) TimerEvent: {}
+[12.924006] (-) TimerEvent: {}
+[13.024271] (-) TimerEvent: {}
+[13.124540] (-) TimerEvent: {}
+[13.224802] (-) TimerEvent: {}
+[13.246279] (serial_driver) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[13.324904] (-) TimerEvent: {}
+[13.378268] (serial_driver) StdoutLine: {'line': b'[ 40%] Built target gtest_main\n'}
+[13.425006] (-) TimerEvent: {}
+[13.525265] (-) TimerEvent: {}
+[13.598339] (udp_driver) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[13.625362] (-) TimerEvent: {}
+[13.718318] (udp_driver) StdoutLine: {'line': b'[ 29%] Built target gtest_main\n'}
+[13.725465] (-) TimerEvent: {}
+[13.825823] (-) TimerEvent: {}
+[13.926157] (-) TimerEvent: {}
+[13.992715] (serial_driver) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libserial_driver.so\x1b[0m\n'}
+[14.026254] (-) TimerEvent: {}
+[14.123309] (udp_driver) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libudp_driver.so\x1b[0m\n'}
+[14.126359] (-) TimerEvent: {}
+[14.214136] (serial_driver) StdoutLine: {'line': b'[ 46%] Built target serial_driver\n'}
+[14.225163] (serial_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial_driver_nodes\x1b[0m\n'}
+[14.226438] (-) TimerEvent: {}
+[14.238669] (serial_driver) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX executable serial_bridge\x1b[0m\n'}
+[14.315221] (serial_driver) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/serial_driver_nodes.dir/src/serial_bridge_node.cpp.o\x1b[0m\n'}
+[14.326563] (-) TimerEvent: {}
+[14.370426] (udp_driver) StdoutLine: {'line': b'[ 33%] Built target udp_driver\n'}
+[14.381016] (udp_driver) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX executable udp_sender_node_exe\x1b[0m\n'}
+[14.390842] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_driver_nodes\x1b[0m\n'}
+[14.426654] (-) TimerEvent: {}
+[14.442461] (serial_driver) StdoutLine: {'line': b'[ 60%] Built target serial_bridge\n'}
+[14.450224] (udp_driver) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/udp_driver_nodes.dir/src/udp_receiver_node.cpp.o\x1b[0m\n'}
+[14.478891] (udp_driver) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/udp_driver_nodes.dir/src/udp_sender_node.cpp.o\x1b[0m\n'}
+[14.526743] (-) TimerEvent: {}
+[14.545179] (udp_driver) StdoutLine: {'line': b'[ 45%] Built target udp_sender_node_exe\n'}
+[14.626840] (-) TimerEvent: {}
+[14.727155] (-) TimerEvent: {}
+[14.827501] (-) TimerEvent: {}
+[14.880910] (udp_driver) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable udp_receiver_node_exe\x1b[0m\n'}
+[14.927597] (-) TimerEvent: {}
+[15.027914] (-) TimerEvent: {}
+[15.030170] (udp_driver) StdoutLine: {'line': b'[ 50%] Built target udp_receiver_node_exe\n'}
+[15.128039] (-) TimerEvent: {}
+[15.228308] (-) TimerEvent: {}
+[15.328583] (-) TimerEvent: {}
+[15.428861] (-) TimerEvent: {}
+[15.529133] (-) TimerEvent: {}
+[15.629407] (-) TimerEvent: {}
+[15.729786] (-) TimerEvent: {}
+[15.754138] (udp_driver) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[15.786474] (serial_driver) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[15.819887] (udp_driver) StdoutLine: {'line': b'[ 54%] Built target gtest\n'}
+[15.829907] (-) TimerEvent: {}
+[15.841170] (serial_driver) StdoutLine: {'line': b'[ 66%] Built target gtest\n'}
+[15.851404] (serial_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_serial_port\x1b[0m\n'}
+[15.851552] (serial_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_serial_driver\x1b[0m\n'}
+[15.870653] (serial_driver) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_serial_driver.dir/test/test_serial_driver.cpp.o\x1b[0m\n'}
+[15.875135] (serial_driver) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o\x1b[0m\n'}
+[15.930039] (-) TimerEvent: {}
+[16.030377] (-) TimerEvent: {}
+[16.130626] (-) TimerEvent: {}
+[16.230894] (-) TimerEvent: {}
+[16.331149] (-) TimerEvent: {}
+[16.431409] (-) TimerEvent: {}
+[16.531655] (-) TimerEvent: {}
+[16.631900] (-) TimerEvent: {}
+[16.732159] (-) TimerEvent: {}
+[16.832416] (-) TimerEvent: {}
+[16.932676] (-) TimerEvent: {}
+[17.032938] (-) TimerEvent: {}
+[17.133199] (-) TimerEvent: {}
+[17.233453] (-) TimerEvent: {}
+[17.333702] (-) TimerEvent: {}
+[17.433959] (-) TimerEvent: {}
+[17.534219] (-) TimerEvent: {}
+[17.596978] (serial_driver) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable test_serial_driver\x1b[0m\n'}
+[17.634353] (-) TimerEvent: {}
+[17.656434] (serial_driver) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable test_serial_port\x1b[0m\n'}
+[17.734493] (-) TimerEvent: {}
+[17.825318] (serial_driver) StdoutLine: {'line': b'[ 93%] Built target test_serial_driver\n'}
+[17.834605] (-) TimerEvent: {}
+[17.882907] (serial_driver) StdoutLine: {'line': b'[ 93%] Built target test_serial_port\n'}
+[17.934731] (-) TimerEvent: {}
+[18.034995] (-) TimerEvent: {}
+[18.135254] (-) TimerEvent: {}
+[18.235509] (-) TimerEvent: {}
+[18.335769] (-) TimerEvent: {}
+[18.436027] (-) TimerEvent: {}
+[18.536286] (-) TimerEvent: {}
+[18.636573] (-) TimerEvent: {}
+[18.736824] (-) TimerEvent: {}
+[18.837068] (-) TimerEvent: {}
+[18.937318] (-) TimerEvent: {}
+[19.037568] (-) TimerEvent: {}
+[19.137842] (-) TimerEvent: {}
+[19.238125] (-) TimerEvent: {}
+[19.338376] (-) TimerEvent: {}
+[19.438639] (-) TimerEvent: {}
+[19.538895] (-) TimerEvent: {}
+[19.547408] (udp_driver) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libudp_driver_nodes.so\x1b[0m\n'}
+[19.639015] (-) TimerEvent: {}
+[19.739285] (-) TimerEvent: {}
+[19.770008] (serial_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libserial_driver_nodes.so\x1b[0m\n'}
+[19.839419] (-) TimerEvent: {}
+[19.887634] (udp_driver) StdoutLine: {'line': b'[ 58%] Built target udp_driver_nodes\n'}
+[19.898040] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_udp_data\x1b[0m\n'}
+[19.898203] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_udp_driver\x1b[0m\n'}
+[19.898273] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_udp_driver_nodes\x1b[0m\n'}
+[19.898376] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target udp_bridge_node_exe\x1b[0m\n'}
+[19.898475] (udp_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_udp_socket\x1b[0m\n'}
+[19.921477] (udp_driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/test_udp_socket.dir/test/test_udp_socket.cpp.o\x1b[0m\n'}
+[19.921641] (udp_driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/test_udp_data.dir/test/test_udp_data.cpp.o\x1b[0m\n'}
+[19.939527] (-) TimerEvent: {}
+[19.946025] (udp_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/udp_bridge_node_exe.dir/src/udp_bridge_node.cpp.o\x1b[0m\n'}
+[19.946288] (udp_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/test_udp_driver.dir/test/test_udp_driver.cpp.o\x1b[0m\n'}
+[19.948408] (udp_driver) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/test_udp_driver_nodes.dir/test/test_udp_driver_nodes.cpp.o\x1b[0m\n'}
+[20.039617] (-) TimerEvent: {}
+[20.114648] (serial_driver) StdoutLine: {'line': b'[100%] Built target serial_driver_nodes\n'}
+[20.127421] (serial_driver) CommandEnded: {'returncode': 0}
+[20.128483] (serial_driver) JobProgress: {'identifier': 'serial_driver', 'progress': 'install'}
+[20.128529] (serial_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev_pc/dev_ws/build/serial_driver'], 'cwd': '/home/dev_pc/dev_ws/build/serial_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/serial_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[20.139032] (serial_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.139189] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/lib/serial_driver/serial_bridge\n'}
+[20.139498] (serial_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/serial_driver/lib/serial_driver/serial_bridge" to ""\n'}
+[20.139667] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/include\n'}
+[20.139743] (-) TimerEvent: {}
+[20.139905] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/include/serial_driver\n'}
+[20.139980] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/include/serial_driver/serial_bridge_node.hpp\n'}
+[20.140095] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/include/serial_driver/visibility_control.hpp\n'}
+[20.140154] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/include/serial_driver/serial_port.hpp\n'}
+[20.140208] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/include/serial_driver/serial_driver.hpp\n'}
+[20.140282] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/environment/library_path.sh\n'}
+[20.140395] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/environment/library_path.dsv\n'}
+[20.140545] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/lib/libserial_driver.so\n'}
+[20.141227] (serial_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/serial_driver/lib/libserial_driver.so" to ""\n'}
+[20.141338] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/lib/libserial_driver_nodes.so\n'}
+[20.144970] (serial_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/serial_driver/lib/libserial_driver_nodes.so" to ""\n'}
+[20.145154] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/launch\n'}
+[20.145254] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/launch/serial_driver_bridge_node.launch.py\n'}
+[20.145316] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/params\n'}
+[20.145373] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/params/example.params.yaml\n'}
+[20.145445] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/ament_index/resource_index/package_run_dependencies/serial_driver\n'}
+[20.145580] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/ament_index/resource_index/parent_prefix_path/serial_driver\n'}
+[20.145701] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/environment/ament_prefix_path.sh\n'}
+[20.145824] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/environment/ament_prefix_path.dsv\n'}
+[20.145949] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/environment/path.sh\n'}
+[20.146064] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/environment/path.dsv\n'}
+[20.146182] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/local_setup.bash\n'}
+[20.146308] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/local_setup.sh\n'}
+[20.146425] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/local_setup.zsh\n'}
+[20.146546] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/local_setup.dsv\n'}
+[20.146660] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/package.dsv\n'}
+[20.147154] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/ament_index/resource_index/packages/serial_driver\n'}
+[20.147309] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/ament_index/resource_index/rclcpp_components/serial_driver\n'}
+[20.147460] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.147577] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.147698] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.147820] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/cmake/serial_driverConfig.cmake\n'}
+[20.147918] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/cmake/serial_driverConfig-version.cmake\n'}
+[20.148026] (serial_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/serial_driver/share/serial_driver/package.xml\n'}
+[20.155455] (serial_driver) CommandEnded: {'returncode': 0}
+[20.165062] (serial_driver) JobEnded: {'identifier': 'serial_driver', 'rc': 0}
+[20.239882] (-) TimerEvent: {}
+[20.340167] (-) TimerEvent: {}
+[20.440437] (-) TimerEvent: {}
+[20.540708] (-) TimerEvent: {}
+[20.640980] (-) TimerEvent: {}
+[20.741258] (-) TimerEvent: {}
+[20.841542] (-) TimerEvent: {}
+[20.941818] (-) TimerEvent: {}
+[21.042103] (-) TimerEvent: {}
+[21.142416] (-) TimerEvent: {}
+[21.242714] (-) TimerEvent: {}
+[21.342988] (-) TimerEvent: {}
+[21.443287] (-) TimerEvent: {}
+[21.543545] (-) TimerEvent: {}
+[21.643847] (-) TimerEvent: {}
+[21.703528] (udp_driver) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable test_udp_socket\x1b[0m\n'}
+[21.743979] (-) TimerEvent: {}
+[21.844309] (-) TimerEvent: {}
+[21.854026] (udp_driver) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable test_udp_data\x1b[0m\n'}
+[21.908761] (udp_driver) StdoutLine: {'line': b'[ 87%] Built target test_udp_socket\n'}
+[21.944457] (-) TimerEvent: {}
+[22.044880] (-) TimerEvent: {}
+[22.057843] (udp_driver) StdoutLine: {'line': b'[ 87%] Built target test_udp_data\n'}
+[22.145014] (-) TimerEvent: {}
+[22.245378] (-) TimerEvent: {}
+[22.309135] (udp_driver) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable udp_bridge_node_exe\x1b[0m\n'}
+[22.345509] (-) TimerEvent: {}
+[22.445876] (-) TimerEvent: {}
+[22.515236] (udp_driver) StdoutLine: {'line': b'[ 91%] Built target udp_bridge_node_exe\n'}
+[22.545994] (-) TimerEvent: {}
+[22.646271] (-) TimerEvent: {}
+[22.746542] (-) TimerEvent: {}
+[22.846764] (-) TimerEvent: {}
+[22.942210] (udp_driver) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable test_udp_driver\x1b[0m\n'}
+[22.946873] (-) TimerEvent: {}
+[23.047120] (-) TimerEvent: {}
+[23.122213] (udp_driver) StdoutLine: {'line': b'[ 95%] Built target test_udp_driver\n'}
+[23.147239] (-) TimerEvent: {}
+[23.247487] (-) TimerEvent: {}
+[23.347741] (-) TimerEvent: {}
+[23.447994] (-) TimerEvent: {}
+[23.548250] (-) TimerEvent: {}
+[23.648504] (-) TimerEvent: {}
+[23.748765] (-) TimerEvent: {}
+[23.849020] (-) TimerEvent: {}
+[23.949276] (-) TimerEvent: {}
+[24.049532] (-) TimerEvent: {}
+[24.149771] (-) TimerEvent: {}
+[24.250018] (-) TimerEvent: {}
+[24.350263] (-) TimerEvent: {}
+[24.450508] (-) TimerEvent: {}
+[24.550750] (-) TimerEvent: {}
+[24.650994] (-) TimerEvent: {}
+[24.751234] (-) TimerEvent: {}
+[24.851474] (-) TimerEvent: {}
+[24.951711] (-) TimerEvent: {}
+[25.051948] (-) TimerEvent: {}
+[25.152192] (-) TimerEvent: {}
+[25.252440] (-) TimerEvent: {}
+[25.352680] (-) TimerEvent: {}
+[25.452922] (-) TimerEvent: {}
+[25.553169] (-) TimerEvent: {}
+[25.653388] (-) TimerEvent: {}
+[25.753715] (-) TimerEvent: {}
+[25.832811] (udp_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_udp_driver_nodes\x1b[0m\n'}
+[25.853833] (-) TimerEvent: {}
+[25.954091] (-) TimerEvent: {}
+[26.054355] (-) TimerEvent: {}
+[26.154613] (-) TimerEvent: {}
+[26.172295] (udp_driver) StdoutLine: {'line': b'[100%] Built target test_udp_driver_nodes\n'}
+[26.182181] (udp_driver) CommandEnded: {'returncode': 0}
+[26.182812] (udp_driver) JobProgress: {'identifier': 'udp_driver', 'progress': 'install'}
+[26.183026] (udp_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev_pc/dev_ws/build/udp_driver'], 'cwd': '/home/dev_pc/dev_ws/build/udp_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev_pc'), ('SSH_AGENT_PID', '1537'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:/home/dev_pc/dev_ws/install/serial/lib:/home/dev_pc/dev_ws/src/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dev_pc'), ('OLDPWD', '/home/dev_pc/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1439'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dev_pc/dev_ws/install:/home/dev_pc/dev_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev_pc'), ('JOURNAL_STREAM', '8:48132'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dev_pc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dev-pc:@/tmp/.ICE-unix/1574,unix/dev-pc:/tmp/.ICE-unix/1574'), ('INVOCATION_ID', 'c2fa07aab72e45fbae3a61d6aab76295'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3999c233_1573_4930_a46d_3a097be76042'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dev_pc/dev_ws/build/udp_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy')]), 'shell': False}
+[26.192077] (udp_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.192325] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_receiver_node_exe\n'}
+[26.192789] (udp_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_receiver_node_exe" to ""\n'}
+[26.192960] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_sender_node_exe\n'}
+[26.193413] (udp_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_sender_node_exe" to ""\n'}
+[26.193677] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/include\n'}
+[26.193850] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver\n'}
+[26.193995] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/visibility_control.hpp\n'}
+[26.194156] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_driver.hpp\n'}
+[26.194225] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_socket.hpp\n'}
+[26.194357] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_receiver_node.hpp\n'}
+[26.194431] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_sender_node.hpp\n'}
+[26.194486] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/library_path.sh\n'}
+[26.194540] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/library_path.dsv\n'}
+[26.194609] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver.so\n'}
+[26.195340] (udp_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver.so" to ""\n'}
+[26.195461] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver_nodes.so\n'}
+[26.198561] (udp_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver_nodes.so" to ""\n'}
+[26.198635] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_bridge_node_exe\n'}
+[26.199213] (udp_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_bridge_node_exe" to ""\n'}
+[26.199380] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/package_run_dependencies/udp_driver\n'}
+[26.199588] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/parent_prefix_path/udp_driver\n'}
+[26.199817] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.sh\n'}
+[26.199880] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.dsv\n'}
+[26.200029] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/path.sh\n'}
+[26.200106] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/path.dsv\n'}
+[26.200180] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.bash\n'}
+[26.200273] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.sh\n'}
+[26.200416] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.zsh\n'}
+[26.200550] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.dsv\n'}
+[26.200666] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/package.dsv\n'}
+[26.200840] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/packages/udp_driver\n'}
+[26.201008] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/rclcpp_components/udp_driver\n'}
+[26.201173] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.201305] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.201413] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[26.201532] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig.cmake\n'}
+[26.201616] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig-version.cmake\n'}
+[26.201727] (udp_driver) StdoutLine: {'line': b'-- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/package.xml\n'}
+[26.204090] (udp_driver) CommandEnded: {'returncode': 0}
+[26.215787] (udp_driver) JobEnded: {'identifier': 'udp_driver', 'rc': 0}
+[26.216454] (-) EventReactorShutdown: {}

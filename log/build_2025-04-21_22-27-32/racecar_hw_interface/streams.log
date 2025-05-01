@@ -1,0 +1,21 @@
+[0.009s] Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+[0.051s] Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+[0.054s] Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racecar_hw_interface
+[0.063s] -- Install configuration: ""
+[0.064s] -- Execute custom install script
+[0.064s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/package_run_dependencies/racecar_hw_interface
+[0.065s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/parent_prefix_path/racecar_hw_interface
+[0.065s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.sh
+[0.065s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.dsv
+[0.066s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.sh
+[0.066s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.dsv
+[0.066s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.bash
+[0.067s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.sh
+[0.067s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.zsh
+[0.067s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.dsv
+[0.068s] -- Symlinking: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.dsv
+[0.077s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/packages/racecar_hw_interface
+[0.077s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig.cmake
+[0.077s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig-version.cmake
+[0.077s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.xml
+[0.080s] Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racecar_hw_interface

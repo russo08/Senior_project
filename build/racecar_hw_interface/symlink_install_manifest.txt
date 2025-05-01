@@ -1,0 +1,15 @@
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/package_run_dependencies/racecar_hw_interface
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/parent_prefix_path/racecar_hw_interface
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.sh
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.dsv
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.sh
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.dsv
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.bash
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.sh
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.zsh
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.dsv
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.dsv
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/packages/racecar_hw_interface
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig.cmake
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig-version.cmake
+/home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.xml

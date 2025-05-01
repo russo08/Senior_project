@@ -1,0 +1,22 @@
+In file included from [01m[K/home/dev_pc/dev_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:25[m[K:
+[01m[K/home/dev_pc/dev_ws/src/serial/include/serial/serial.h:46:10:[m[K [01;31m[Kfatal error: [m[Kinclude/serial/v8stdint.h: No such file or directory
+   46 | #include [01;31m[K"include/serial/v8stdint.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/dev_pc/dev_ws/src/serial/src/serial.cc:12[m[K:
+[01m[K/home/dev_pc/dev_ws/src/serial/include/serial/serial.h:46:10:[m[K [01;31m[Kfatal error: [m[Kinclude/serial/v8stdint.h: No such file or directory
+   46 | #include [01;31m[K"include/serial/v8stdint.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/serial.dir/build.make:89: CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/serial.dir/build.make:63: CMakeFiles/serial.dir/src/serial.cc.o] Error 1
+In file included from [01m[K/home/dev_pc/dev_ws/src/serial/include/serial/impl/unix.h:43[m[K,
+                 from [01m[K/home/dev_pc/dev_ws/src/serial/src/impl/unix.cc:35[m[K:
+[01m[K/home/dev_pc/dev_ws/src/serial/include/serial/serial.h:46:10:[m[K [01;31m[Kfatal error: [m[Kinclude/serial/v8stdint.h: No such file or directory
+   46 | #include [01;31m[K"include/serial/v8stdint.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/serial.dir/build.make:76: CMakeFiles/serial.dir/src/impl/unix.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:123: CMakeFiles/serial.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

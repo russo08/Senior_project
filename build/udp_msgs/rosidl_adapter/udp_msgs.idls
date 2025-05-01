@@ -1,0 +1,3 @@
+/home/dev_pc/dev_ws/build/udp_msgs/rosidl_adapter/udp_msgs:msg/UdpPacket.idl
+/home/dev_pc/dev_ws/build/udp_msgs/rosidl_adapter/udp_msgs:srv/UdpSend.idl
+/home/dev_pc/dev_ws/build/udp_msgs/rosidl_adapter/udp_msgs:srv/UdpSocket.idl

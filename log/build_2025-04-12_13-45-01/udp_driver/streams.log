@@ -1,0 +1,142 @@
+[0.014s] Invoking command in '/home/dev_pc/dev_ws/build/udp_driver': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/dev_pc/dev_ws/src/transport_drivers/udp_driver -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/udp_driver
+[0.060s] -- The C compiler identification is GNU 9.4.0
+[0.107s] -- The CXX compiler identification is GNU 9.4.0
+[0.111s] -- Check for working C compiler: /usr/bin/cc
+[0.168s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.169s] -- Detecting C compiler ABI info
+[0.228s] -- Detecting C compiler ABI info - done
+[0.238s] -- Detecting C compile features
+[0.238s] -- Detecting C compile features - done
+[0.240s] -- Check for working CXX compiler: /usr/bin/c++
+[0.309s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.310s] -- Detecting CXX compiler ABI info
+[0.379s] -- Detecting CXX compiler ABI info - done
+[0.389s] -- Detecting CXX compile features
+[0.389s] -- Detecting CXX compile features - done
+[0.391s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.414s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.414s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.682s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.689s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.760s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.785s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.855s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.906s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.907s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.908s] -- Looking for pthread.h
+[0.972s] -- Looking for pthread.h - found
+[0.972s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.036s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.037s] -- Looking for pthread_create in pthreads
+[1.088s] -- Looking for pthread_create in pthreads - not found
+[1.088s] -- Looking for pthread_create in pthread
+[1.149s] -- Looking for pthread_create in pthread - found
+[1.150s] -- Found Threads: TRUE  
+[1.414s] -- Found ASIO: /usr/include  
+[1.462s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.481s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.483s] -- Check if compiler accepts -pthread
+[1.548s] -- Check if compiler accepts -pthread - yes
+[1.565s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.566s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.567s] -- Configured cppcheck include dirs: /home/dev_pc/dev_ws/src/transport_drivers/udp_driver/include
+[1.567s] -- Configured cppcheck exclude dirs and/or files: 
+[1.569s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.569s] -- Configured cpplint exclude dirs and/or files: 
+[1.569s] -- Added test 'lint_cmake' to check CMake code style
+[1.571s] -- Added test 'uncrustify' to check C / C++ code style
+[1.571s] -- Configured uncrustify additional arguments: 
+[1.572s] -- Added test 'xmllint' to check XML markup files
+[1.577s] -- Configuring done
+[1.674s] -- Generating done
+[1.711s] -- Build files have been written to: /home/dev_pc/dev_ws/build/udp_driver
+[1.726s] Invoked command in '/home/dev_pc/dev_ws/build/udp_driver' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/dev_pc/dev_ws/src/transport_drivers/udp_driver -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/udp_driver
+[1.734s] Invoking command in '/home/dev_pc/dev_ws/build/udp_driver': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev_pc/dev_ws/build/udp_driver -- -j6 -l6
+[1.784s] [35m[1mScanning dependencies of target gtest_main[0m
+[1.795s] [35m[1mScanning dependencies of target udp_driver[0m
+[1.800s] [35m[1mScanning dependencies of target udp_sender_node_exe[0m
+[1.811s] [35m[1mScanning dependencies of target gtest[0m
+[1.823s] [35m[1mScanning dependencies of target udp_receiver_node_exe[0m
+[1.830s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.840s] [  8%] [32mBuilding CXX object CMakeFiles/udp_driver.dir/src/udp_socket.cpp.o[0m
+[1.848s] [ 12%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.862s] [ 16%] [32mBuilding CXX object CMakeFiles/udp_sender_node_exe.dir/rclcpp_components/node_main_udp_sender_node_exe.cpp.o[0m
+[1.875s] [ 20%] [32mBuilding CXX object CMakeFiles/udp_driver.dir/src/udp_driver.cpp.o[0m
+[1.912s] [ 25%] [32mBuilding CXX object CMakeFiles/udp_receiver_node_exe.dir/rclcpp_components/node_main_udp_receiver_node_exe.cpp.o[0m
+[3.763s] [ 29%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.883s] [ 29%] Built target gtest_main
+[4.288s] [ 33%] [32m[1mLinking CXX shared library libudp_driver.so[0m
+[4.536s] [ 33%] Built target udp_driver
+[4.546s] [ 37%] [32m[1mLinking CXX executable udp_sender_node_exe[0m
+[4.556s] [35m[1mScanning dependencies of target udp_driver_nodes[0m
+[4.615s] [ 41%] [32mBuilding CXX object CMakeFiles/udp_driver_nodes.dir/src/udp_receiver_node.cpp.o[0m
+[4.644s] [ 45%] [32mBuilding CXX object CMakeFiles/udp_driver_nodes.dir/src/udp_sender_node.cpp.o[0m
+[4.710s] [ 45%] Built target udp_sender_node_exe
+[5.046s] [ 50%] [32m[1mLinking CXX executable udp_receiver_node_exe[0m
+[5.195s] [ 50%] Built target udp_receiver_node_exe
+[5.919s] [ 54%] [32m[1mLinking CXX static library libgtest.a[0m
+[5.985s] [ 54%] Built target gtest
+[9.712s] [ 58%] [32m[1mLinking CXX shared library libudp_driver_nodes.so[0m
+[10.053s] [ 58%] Built target udp_driver_nodes
+[10.063s] [35m[1mScanning dependencies of target test_udp_data[0m
+[10.063s] [35m[1mScanning dependencies of target test_udp_driver[0m
+[10.063s] [35m[1mScanning dependencies of target test_udp_driver_nodes[0m
+[10.063s] [35m[1mScanning dependencies of target udp_bridge_node_exe[0m
+[10.063s] [35m[1mScanning dependencies of target test_udp_socket[0m
+[10.087s] [ 66%] [32mBuilding CXX object CMakeFiles/test_udp_socket.dir/test/test_udp_socket.cpp.o[0m
+[10.087s] [ 66%] [32mBuilding CXX object CMakeFiles/test_udp_data.dir/test/test_udp_data.cpp.o[0m
+[10.111s] [ 75%] [32mBuilding CXX object CMakeFiles/udp_bridge_node_exe.dir/src/udp_bridge_node.cpp.o[0m
+[10.111s] [ 75%] [32mBuilding CXX object CMakeFiles/test_udp_driver.dir/test/test_udp_driver.cpp.o[0m
+[10.113s] [ 79%] [32mBuilding CXX object CMakeFiles/test_udp_driver_nodes.dir/test/test_udp_driver_nodes.cpp.o[0m
+[11.869s] [ 83%] [32m[1mLinking CXX executable test_udp_socket[0m
+[12.019s] [ 87%] [32m[1mLinking CXX executable test_udp_data[0m
+[12.074s] [ 87%] Built target test_udp_socket
+[12.223s] [ 87%] Built target test_udp_data
+[12.474s] [ 91%] [32m[1mLinking CXX executable udp_bridge_node_exe[0m
+[12.680s] [ 91%] Built target udp_bridge_node_exe
+[13.107s] [ 95%] [32m[1mLinking CXX executable test_udp_driver[0m
+[13.287s] [ 95%] Built target test_udp_driver
+[15.998s] [100%] [32m[1mLinking CXX executable test_udp_driver_nodes[0m
+[16.337s] [100%] Built target test_udp_driver_nodes
+[16.347s] Invoked command in '/home/dev_pc/dev_ws/build/udp_driver' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev_pc/dev_ws/build/udp_driver -- -j6 -l6
+[16.349s] Invoking command in '/home/dev_pc/dev_ws/build/udp_driver': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dev_pc/dev_ws/build/udp_driver
+[16.357s] -- Install configuration: ""
+[16.357s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_receiver_node_exe
+[16.358s] -- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_receiver_node_exe" to ""
+[16.358s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_sender_node_exe
+[16.358s] -- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_sender_node_exe" to ""
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/include
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/visibility_control.hpp
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_driver.hpp
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_socket.hpp
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_receiver_node.hpp
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/include/udp_driver/udp_sender_node.hpp
+[16.359s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/library_path.sh
+[16.360s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/library_path.dsv
+[16.360s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver.so
+[16.360s] -- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver.so" to ""
+[16.360s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver_nodes.so
+[16.364s] -- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/libudp_driver_nodes.so" to ""
+[16.364s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_bridge_node_exe
+[16.364s] -- Set runtime path of "/home/dev_pc/dev_ws/install/udp_driver/lib/udp_driver/udp_bridge_node_exe" to ""
+[16.364s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/package_run_dependencies/udp_driver
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/parent_prefix_path/udp_driver
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.sh
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/ament_prefix_path.dsv
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/path.sh
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/environment/path.dsv
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.bash
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.sh
+[16.365s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.zsh
+[16.366s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/local_setup.dsv
+[16.366s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/package.dsv
+[16.366s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/packages/udp_driver
+[16.366s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/ament_index/resource_index/rclcpp_components/udp_driver
+[16.366s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.366s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.366s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[16.367s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig.cmake
+[16.367s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/cmake/udp_driverConfig-version.cmake
+[16.367s] -- Installing: /home/dev_pc/dev_ws/install/udp_driver/share/udp_driver/package.xml
+[16.369s] Invoked command in '/home/dev_pc/dev_ws/build/udp_driver' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/io_context/lib:/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dev_pc/dev_ws/build/udp_driver

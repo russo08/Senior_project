@@ -1,0 +1,50 @@
+[0.021s] Invoking command in '/home/dev_pc/dev_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/dev_pc/dev_ws/src/transport_drivers/asio_cmake_module -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/asio_cmake_module
+[0.078s] -- The C compiler identification is GNU 9.4.0
+[0.124s] -- The CXX compiler identification is GNU 9.4.0
+[0.128s] -- Check for working C compiler: /usr/bin/cc
+[0.187s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.188s] -- Detecting C compiler ABI info
+[0.247s] -- Detecting C compiler ABI info - done
+[0.257s] -- Detecting C compile features
+[0.257s] -- Detecting C compile features - done
+[0.259s] -- Check for working CXX compiler: /usr/bin/c++
+[0.327s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.328s] -- Detecting CXX compiler ABI info
+[0.395s] -- Detecting CXX compiler ABI info - done
+[0.404s] -- Detecting CXX compile features
+[0.405s] -- Detecting CXX compile features - done
+[0.407s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.427s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.427s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.593s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.658s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.659s] -- Added test 'lint_cmake' to check CMake code style
+[0.660s] -- Added test 'xmllint' to check XML markup files
+[0.662s] -- Configuring done
+[0.663s] -- Generating done
+[0.665s] -- Build files have been written to: /home/dev_pc/dev_ws/build/asio_cmake_module
+[0.668s] Invoked command in '/home/dev_pc/dev_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/dev_pc/dev_ws/src/transport_drivers/asio_cmake_module -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/asio_cmake_module
+[0.670s] Invoking command in '/home/dev_pc/dev_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/asio_cmake_module -- -j6 -l6
+[0.703s] Invoked command in '/home/dev_pc/dev_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/asio_cmake_module -- -j6 -l6
+[0.705s] Invoking command in '/home/dev_pc/dev_ws/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/asio_cmake_module
+[0.713s] -- Install configuration: ""
+[0.713s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/ament_index/resource_index/package_run_dependencies/asio_cmake_module
+[0.713s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/ament_index/resource_index/parent_prefix_path/asio_cmake_module
+[0.713s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.sh
+[0.713s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.dsv
+[0.713s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.sh
+[0.713s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/environment/path.dsv
+[0.713s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.bash
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.sh
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.zsh
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/local_setup.dsv
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/package.dsv
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/ament_index/resource_index/packages/asio_cmake_module
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_module-extras.cmake
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig.cmake
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig-version.cmake
+[0.714s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/package.xml
+[0.715s] -- Up-to-date: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake
+[0.715s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules
+[0.715s] -- Installing: /home/dev_pc/dev_ws/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake
+[0.716s] Invoked command in '/home/dev_pc/dev_ws/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/asio_cmake_module

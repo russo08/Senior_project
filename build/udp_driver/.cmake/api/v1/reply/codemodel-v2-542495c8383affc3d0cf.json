@@ -1,0 +1,200 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.4"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"build" : "gtest",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/foxy/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "udp_driver",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-5b912d8657dcce0f0f39.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-1bb49af7e801abb1fb03.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_udp_data::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_udp_data-a75e64a1729e3b82fce6.json",
+					"name" : "test_udp_data",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_udp_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_udp_driver-222d78285bb54471c46a.json",
+					"name" : "test_udp_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_udp_driver_nodes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_udp_driver_nodes-0f53057ecf53472bbf7a.json",
+					"name" : "test_udp_driver_nodes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_udp_socket::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_udp_socket-5360d9d0924c97c36416.json",
+					"name" : "test_udp_socket",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udp_bridge_node_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udp_bridge_node_exe-3673d6d3514d72160ebd.json",
+					"name" : "udp_bridge_node_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udp_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udp_driver-d642e85530b1391dd2ce.json",
+					"name" : "udp_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udp_driver_nodes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udp_driver_nodes-d4ec4286e3e8ddf47419.json",
+					"name" : "udp_driver_nodes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udp_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udp_driver_uninstall-3f9ec876e30838b0912c.json",
+					"name" : "udp_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udp_receiver_node_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udp_receiver_node_exe-7d1de97d4480a18ce37d.json",
+					"name" : "udp_receiver_node_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udp_sender_node_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udp_sender_node_exe-9d68fdccaba4c9f1b1cd.json",
+					"name" : "udp_sender_node_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f66ae8b645998daea465.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dev_pc/dev_ws/build/udp_driver",
+		"source" : "/home/dev_pc/dev_ws/src/transport_drivers/udp_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

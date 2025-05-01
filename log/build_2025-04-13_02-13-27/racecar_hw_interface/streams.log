@@ -1,0 +1,34 @@
+[0.011s] Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+[0.032s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.050s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.197s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.203s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.232s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.235s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.337s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.379s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.381s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.503s] -- Found serial: 1.2.1 (/home/dev_pc/dev_ws/install/serial/share/serial/cmake)
+[0.554s] -- Configuring done
+[0.556s] -- Generating done
+[0.557s] -- Build files have been written to: /home/dev_pc/dev_ws/build/racecar_hw_interface
+[0.579s] Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '0': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+[0.581s] Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racecar_hw_interface
+[0.589s] -- Install configuration: ""
+[0.589s] -- Execute custom install script
+[0.589s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/package_run_dependencies/racecar_hw_interface
+[0.589s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/parent_prefix_path/racecar_hw_interface
+[0.590s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.sh
+[0.590s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/ament_prefix_path.dsv
+[0.590s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.sh
+[0.590s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/environment/path.dsv
+[0.591s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.bash
+[0.591s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.sh
+[0.591s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.zsh
+[0.591s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/local_setup.dsv
+[0.591s] -- Symlinking: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.dsv
+[0.600s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/ament_index/resource_index/packages/racecar_hw_interface
+[0.600s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig.cmake
+[0.600s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/cmake/racecar_hw_interfaceConfig-version.cmake
+[0.600s] -- Up-to-date symlink: /home/dev_pc/dev_ws/install/racecar_hw_interface/share/racecar_hw_interface/package.xml
+[0.602s] Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '0': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racecar_hw_interface

@@ -1,0 +1,4 @@
+Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racecar_hw_interface
+Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racecar_hw_interface

@@ -1,0 +1,33 @@
+[0.009s] Invoking command in '/home/dev_pc/dev_ws/build/racecar_hw_interface': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6
+[0.033s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.196s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.202s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.231s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.234s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.337s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.380s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.382s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.507s] -- Found serial: 1.2.1 (/home/dev_pc/dev_ws/install/serial/share/serial/cmake)
+[0.517s] CMake Error at CMakeLists.txt:17 (find_package):
+[0.517s]   By not providing "Findhardware_interface.cmake" in CMAKE_MODULE_PATH this
+[0.517s]   project has asked CMake to find a package configuration file provided by
+[0.517s]   "hardware_interface", but CMake did not find one.
+[0.517s] 
+[0.517s]   Could not find a package configuration file provided by
+[0.517s]   "hardware_interface" with any of the following names:
+[0.517s] 
+[0.517s]     hardware_interfaceConfig.cmake
+[0.517s]     hardware_interface-config.cmake
+[0.518s] 
+[0.518s]   Add the installation prefix of "hardware_interface" to CMAKE_PREFIX_PATH or
+[0.518s]   set "hardware_interface_DIR" to a directory containing one of the above
+[0.518s]   files.  If "hardware_interface" provides a separate development package or
+[0.518s]   SDK, be sure it has been installed.
+[0.518s] 
+[0.518s] 
+[0.518s] -- Configuring incomplete, errors occurred!
+[0.519s] See also "/home/dev_pc/dev_ws/build/racecar_hw_interface/CMakeFiles/CMakeOutput.log".
+[0.519s] See also "/home/dev_pc/dev_ws/build/racecar_hw_interface/CMakeFiles/CMakeError.log".
+[0.523s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.524s] Invoked command in '/home/dev_pc/dev_ws/build/racecar_hw_interface' returned '2': CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/udp_driver:/home/dev_pc/dev_ws/install/serial_driver:/home/dev_pc/dev_ws/install/io_context:/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/asio_cmake_module:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racecar_hw_interface -- -j6 -l6

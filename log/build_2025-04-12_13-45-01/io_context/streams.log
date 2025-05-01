@@ -1,0 +1,76 @@
+[0.010s] Invoking command in '/home/dev_pc/dev_ws/build/io_context': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/dev_pc/dev_ws/src/transport_drivers/io_context -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/io_context
+[0.022s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.040s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.274s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.276s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.379s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.421s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.423s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.579s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.585s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.592s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.594s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.594s] -- Configured cppcheck include dirs: /home/dev_pc/dev_ws/src/transport_drivers/io_context/include
+[0.594s] -- Configured cppcheck exclude dirs and/or files: 
+[0.595s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.595s] -- Configured cpplint exclude dirs and/or files: 
+[0.596s] -- Added test 'lint_cmake' to check CMake code style
+[0.597s] -- Added test 'uncrustify' to check C / C++ code style
+[0.597s] -- Configured uncrustify additional arguments: 
+[0.598s] -- Added test 'xmllint' to check XML markup files
+[0.602s] -- Configuring done
+[0.614s] -- Generating done
+[0.620s] -- Build files have been written to: /home/dev_pc/dev_ws/build/io_context
+[0.627s] Invoked command in '/home/dev_pc/dev_ws/build/io_context' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/dev_pc/dev_ws/src/transport_drivers/io_context -DCMAKE_INSTALL_PREFIX=/home/dev_pc/dev_ws/install/io_context
+[0.627s] Invoking command in '/home/dev_pc/dev_ws/build/io_context': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev_pc/dev_ws/build/io_context -- -j6 -l6
+[0.662s] [35m[1mScanning dependencies of target gtest[0m
+[0.662s] [35m[1mScanning dependencies of target gtest_main[0m
+[0.662s] [35m[1mScanning dependencies of target io_context[0m
+[0.675s] [ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[0.676s] [ 22%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.681s] [ 33%] [32mBuilding CXX object CMakeFiles/io_context.dir/src/io_context.cpp.o[0m
+[0.681s] [ 44%] [32mBuilding CXX object CMakeFiles/io_context.dir/src/msg_converters/std_msgs.cpp.o[0m
+[1.583s] [ 55%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[1.614s] [ 55%] Built target gtest_main
+[1.917s] [ 66%] [32m[1mLinking CXX shared library libio_context.so[0m
+[2.016s] [ 66%] Built target io_context
+[3.484s] [ 77%] [32m[1mLinking CXX static library libgtest.a[0m
+[3.533s] [ 77%] Built target gtest
+[3.542s] [35m[1mScanning dependencies of target test_io_context[0m
+[3.555s] [ 88%] [32mBuilding CXX object CMakeFiles/test_io_context.dir/test/test_io_context.cpp.o[0m
+[5.222s] [100%] [32m[1mLinking CXX executable test_io_context[0m
+[5.370s] [100%] Built target test_io_context
+[5.380s] Invoked command in '/home/dev_pc/dev_ws/build/io_context' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev_pc/dev_ws/build/io_context -- -j6 -l6
+[5.381s] Invoking command in '/home/dev_pc/dev_ws/build/io_context': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dev_pc/dev_ws/build/io_context
+[5.390s] -- Install configuration: ""
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include/io_context
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include/io_context/common.hpp
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include/io_context/io_context.hpp
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters/converters.hpp
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters/std_msgs.hpp
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/include/msg_converters/udp_msgs.hpp
+[5.390s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/library_path.sh
+[5.391s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/library_path.dsv
+[5.391s] -- Installing: /home/dev_pc/dev_ws/install/io_context/lib/libio_context.so
+[5.391s] -- Set runtime path of "/home/dev_pc/dev_ws/install/io_context/lib/libio_context.so" to ""
+[5.391s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/ament_index/resource_index/package_run_dependencies/io_context
+[5.391s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/ament_index/resource_index/parent_prefix_path/io_context
+[5.391s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/ament_prefix_path.sh
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/ament_prefix_path.dsv
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/path.sh
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/environment/path.dsv
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.bash
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.sh
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.zsh
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/local_setup.dsv
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/package.dsv
+[5.392s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/ament_index/resource_index/packages/io_context
+[5.393s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.393s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.393s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/ament_cmake_export_libraries-extras.cmake
+[5.393s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/io_contextConfig.cmake
+[5.393s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/cmake/io_contextConfig-version.cmake
+[5.393s] -- Installing: /home/dev_pc/dev_ws/install/io_context/share/io_context/package.xml
+[5.395s] Invoked command in '/home/dev_pc/dev_ws/build/io_context' returned '0': AMENT_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev_pc/dev_ws/install/udp_msgs:/home/dev_pc/dev_ws/install/asio_cmake_module:/home/dev_pc/dev_ws/install/serial:/home/dev_pc/dev_ws/install/racer_bot:/home/dev_pc/dev_ws/install/racecar_hw_interface:/home/dev_pc/dev_ws/src/install/serial:/home/dev_pc/dev_ws/src/install/racer_bot:/home/dev_pc/dev_ws/src/install/racecar_hw_interface:/opt/ros/foxy LD_LIBRARY_PATH=/home/dev_pc/dev_ws/install/udp_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev_pc/dev_ws/install/udp_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dev_pc/dev_ws/build/io_context

@@ -1,0 +1,32 @@
+[0.022s] Invoking command in '/home/dev_pc/dev_ws/build/racer_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racer_bot -- -j6 -l6
+[0.062s] Invoked command in '/home/dev_pc/dev_ws/build/racer_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/dev_pc/dev_ws/build/racer_bot -- -j6 -l6
+[0.065s] Invoking command in '/home/dev_pc/dev_ws/build/racer_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racer_bot
+[0.073s] -- Install configuration: ""
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/config
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/config/empty.yaml
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/inertial_macros.xacro
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/robot.urdf.xacro
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/robot_core.xacro
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/description/gazebo_control.xacro
+[0.074s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/launch
+[0.075s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/launch/rsp.launch.py
+[0.076s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/launch/launch_sim.launch.py
+[0.076s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/worlds
+[0.076s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/worlds/empty.world
+[0.076s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/ament_index/resource_index/package_run_dependencies/racer_bot
+[0.078s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/ament_index/resource_index/parent_prefix_path/racer_bot
+[0.078s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/ament_prefix_path.sh
+[0.079s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/ament_prefix_path.dsv
+[0.079s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/path.sh
+[0.079s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/environment/path.dsv
+[0.079s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.bash
+[0.079s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.sh
+[0.080s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.zsh
+[0.080s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/local_setup.dsv
+[0.080s] -- Installing: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/package.dsv
+[0.080s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/ament_index/resource_index/packages/racer_bot
+[0.080s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/cmake/racer_botConfig.cmake
+[0.081s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/cmake/racer_botConfig-version.cmake
+[0.082s] -- Up-to-date: /home/dev_pc/dev_ws/install/racer_bot/share/racer_bot/package.xml
+[0.088s] Invoked command in '/home/dev_pc/dev_ws/build/racer_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/dev_pc/dev_ws/build/racer_bot

@@ -1,0 +1,1 @@
+/home/dev_pc/dev_ws/build/racer_bot/ament_cmake_core/racer_botConfig-version.cmake
